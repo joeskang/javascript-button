@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="the-text">0</h1>
+    <button onclick="myFunction()">Click me!</button>
+
+    <h1>hint 1: use onclick</h1>
+    <h1>hint 2: use a boolean and if statement</h1>
+    <h1>let myVariable = true;</h1>
+
+    <script>
+        // #1 
+        // let clickedAlready = false;
+        let clickCount = 0;
+
+        function myFunction() {
+            let el = document.getElementById("the-text");
+
+            clickCount += 1;
+
+            el.innerText = clickCount;
+            document.body.style.background = "#" + clickCount;
+
+        }
+    </script>
+    
+</body>
+</html>
